@@ -45,8 +45,8 @@ collections:
         name: 'gallery'
         file: site/settings/gallery.json
         fields:
-          - label: 'Galleryim'
-            name: 'galleryImages'
+          - label: 'GalleryImage'
+            name: 'gallery_image'
             widget: 'list'
             fields:
               - { label: Image, name: image, widget: image }
