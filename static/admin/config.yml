@@ -21,3 +21,34 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - label: 'Settings'
+    name: 'settings'
+    files:
+      - label: 'Contact Info'
+        name: 'contact_info'
+        file: site/settings/contact_info.json
+        fields:
+          - { label: 'Phone', name: 'phone', widget: 'string' }
+          - { label: 'Email', name: 'email', widget: 'string' }
+      - label: 'Hours'
+        name: 'hours'
+        file: site/settings/hours.json
+        fields:
+          - {
+              label: 'Mon',
+              name: 'mon',
+              widget: 'string',
+              hint: 'example: 8am-11pm',
+            }
+          - { label: 'Tues', name: 'tues', widget: 'string' }
+      - label: 'Gallery'
+        name: 'gallery'
+        file: site/settings/gallery.json
+        fields:
+          - label: 'Galleryim'
+            name: 'galleryImages'
+            widget: 'list'
+            summary: '{{fields.image}}'
+            fields:
+              - { label: Image, name: image, widget: image }
+              - { label: Description, name: description, widget: string }
