@@ -1,0 +1,18 @@
+{
+  "gallery_image": [
+    {
+      "image": "images/screen-shot-2021-09-30-at-9.24.07-am.png",
+      "description": "ok"
+    }
+  ],
+  "gallery_images": [
+    {
+      "image": "images/screen-shot-2021-09-30-at-12.55.30-pm.png",
+      "description": "trees."
+    },
+    {
+      "image": "images/screen-shot-2021-09-30-at-9.24.07-am.png",
+      "description": "mtns."
+    }
+  ]
+}
