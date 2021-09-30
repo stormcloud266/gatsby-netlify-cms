@@ -1,4 +1,6 @@
 {
   "phone": "23e23",
-  "email": "asdfasdf"
+  "email": "asdfasdf",
+  "street": "123 Road",
+  "city_state_zip": "Cody, WY 82414"
 }
