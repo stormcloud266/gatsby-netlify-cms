@@ -5,19 +5,26 @@ import { Fade } from 'react-awesome-reveal'
 import { Layout, Seo } from '@global'
 import { Container, Title } from '@UI'
 
+import galleryData from '../../site/settings/gallery.json'
+
 const IndexPage = ({ data }) => {
-	console.log('data: ', data.allFile.edges)
+	const allImages = data.allFile.edges
 	return (
 		<Layout>
 			<Seo />
-			{data.allFile.edges.map(({ node }) => (
-				<GatsbyImage image={getImage(node)} />
-			))}
+
 			<Container section wrapperSm textBlock textCenter>
-				<p>Welcome to</p>
-				<Fade triggerOnce>
-					<Title tag='h1'>Gatsby Starter Stormcloud</Title>
-				</Fade>
+				{allImages.map(({ node }) => {
+					const match = galleryData.galleryImages.find((galleryImage) => {
+						return galleryImage.image.includes(node.relativePath)
+					})
+
+					return (
+						match && (
+							<GatsbyImage image={getImage(node)} alt={match.description} />
+						)
+					)
+				})}
 			</Container>
 		</Layout>
 	)
@@ -32,7 +39,6 @@ export const query = graphql`
 				node {
 					id
 					relativePath
-
 					childImageSharp {
 						gatsbyImageData(
 							layout: CONSTRAINED
