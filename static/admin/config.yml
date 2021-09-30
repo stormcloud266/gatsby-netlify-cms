@@ -6,33 +6,18 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: 'content/blog'
-    create: true
-    slug: 'index'
-    media_folder: ''
-    public_folder: ''
-    path: '{{title}}/index'
-    editor:
-      preview: false
-    fields:
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-  - label: 'Settings'
-    name: 'settings'
+  - label: 'Site Configuration'
+    name: 'site_config'
     files:
       - label: 'Contact Info'
         name: 'contact_info'
-        file: site/settings/contact_info.json
+        file: site/contact_info/index.json
         fields:
           - { label: 'Phone', name: 'phone', widget: 'string' }
           - { label: 'Email', name: 'email', widget: 'string' }
       - label: 'Hours'
         name: 'hours'
-        file: site/settings/hours.json
+        file: site/hours/index.json
         fields:
           - {
               label: 'Mon',
@@ -43,8 +28,8 @@ collections:
           - { label: 'Tues', name: 'tues', widget: 'string' }
       - label: 'Gallery'
         name: 'gallery'
-        file: site/settings/gallery.json
-        media_folder: '/{{media_folder}}/gallery'
+        file: site/gallery/index.json
+        media_folder: 'images/'
         fields:
           - label: 'GalleryImage'
             name: 'gallery_image'
