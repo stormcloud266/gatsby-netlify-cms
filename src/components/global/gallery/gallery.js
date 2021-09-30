@@ -3,7 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import { Container } from '@UI'
 import galleryData from '../../../../site/gallery'
-import * as styles from './styles.module.scss'
+import * as styles from './gallery.module.scss'
 
 const Gallery = () => {
 	const data = useStaticQuery(graphql`
@@ -27,8 +27,6 @@ const Gallery = () => {
 		}
 	`)
 
-	const images = data.allFile.edges
-
 	// State
 	const [isOpen, setIsOpen] = useState(false)
 	const [modalImage, setModalImage] = useState([])
@@ -38,21 +36,6 @@ const Gallery = () => {
 	const closeButtonRef = useRef(null)
 	const imageRefs = useRef([])
 	imageRefs.current = []
-
-	/* 
-  {allImages.map(({ node }) => {
-    const match = galleryData.galleryImages.find((galleryImage) => {
-      return galleryImage.image.includes(node.relativePath)
-    })
-
-    return (
-      match && (
-        <GatsbyImage image={getImage(node)} alt={match.description} />
-      )
-    )
-  })}
- */
-	console.log('galleryData: ', galleryData)
 
 	useEffect(() => {
 		if (isOpen) {
@@ -79,33 +62,35 @@ const Gallery = () => {
 		imageRefs.current[currentImg].focus()
 	}
 
+	const images = data.allFile.edges.map(({ node }) => {
+		const imageMatch = galleryData.gallery_images.find((galleryImage) => {
+			return galleryImage.image.includes(node.relativePath)
+		})
+
+		return {
+			...node,
+			description: imageMatch.description,
+		}
+	})
+
 	return (
 		<>
 			<div className={styles.gallery}>
-				{images.map(
-					({ node }) => {
-						const { id, relativePath } = node
-
-						// const imageMatch = galleryData.galleryImages.find(
-						// 	(galleryImage) => {
-						// 		return galleryImage.image.includes(node.relativePath)
-						// 	}
-						// )
-
-						return <p></p>
-					}
-					// <div
-					// 	key={i}
-					// 	onClick={() => openModal(image, i)}
-					// 	onKeyPress={(e) => e.key === 'Enter' && openModal(image, i)}
-					// 	tabIndex='0'
-					// 	className={styles.image}
-					// 	ref={addImageRefs}
-					// 	role='button'
-					// >
-					// 	<GatsbyImage image={getImage(image)} alt={image.description} />
-					// </div>
-				)}
+				{images.map((image, i) => {
+					return (
+						<div
+							key={image.id}
+							onClick={() => openModal(image, i)}
+							onKeyPress={(e) => e.key === 'Enter' && openModal(image, i)}
+							tabIndex='0'
+							className={styles.image}
+							ref={addImageRefs}
+							role='button'
+						>
+							<GatsbyImage image={getImage(image)} alt={image.description} />
+						</div>
+					)
+				})}
 			</div>
 
 			{isOpen && (

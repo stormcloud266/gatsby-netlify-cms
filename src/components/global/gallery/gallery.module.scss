@@ -1,0 +1,83 @@
+@import '@globalStyles/variables';
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 0.8rem;
+
+	:global(.gatsby-image-wrapper) {
+		height: 20rem;
+	}
+}
+
+.image {
+	cursor: pointer;
+	transition: opacity 0.3s;
+	overflow: hidden;
+	border-radius: 3px;
+
+	:global(.gatsby-image-wrapper) {
+		transition: transform 0.3s;
+	}
+
+	&:hover,
+	&:focus {
+		opacity: 0.8;
+
+		:global(.gatsby-image-wrapper) {
+			transform: scale(1.03);
+		}
+	}
+}
+
+.modal {
+	position: fixed;
+	z-index: 300;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.closeButton {
+	margin: 2rem auto 0;
+	background-color: $color-link;
+	border-radius: 3px;
+	padding: 0.8rem 2rem;
+	text-transform: uppercase;
+	display: block;
+	font-size: 17px !important;
+	transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+
+	&:hover,
+	&:focus {
+		background-color: $color-cta;
+	}
+}
+
+.modalWrapper {
+	position: relative;
+	margin-top: 5vh;
+	max-width: 90rem;
+
+	:global(.gatsby-image-wrapper) {
+		max-width: 90rem;
+		max-height: 80vh;
+	}
+}
+
+@media only screen and (max-width: 56.25em) {
+	.gallery {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media only screen and (max-width: 40em) {
+	.gallery {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
