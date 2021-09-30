@@ -13,14 +13,5 @@
       "description": "snowy peak."
     }
   ],
-  "gallery_image": [
-    {
-      "image": "static/img/gallery/screen-shot-2021-09-30-at-9.52.38-am.png",
-      "description": "oka"
-    },
-    {
-      "image": "/gallery/screen-shot-2021-09-30-at-9.24.07-am.png",
-      "description": "rr"
-    }
-  ]
+  "gallery_image": []
 }
