@@ -61,10 +61,18 @@ module.exports = {
 		{
 			resolve: 'gatsby-source-filesystem',
 			options: {
-				name: 'staticImages',
-				path: './static/img',
+				name: 'static',
+				path: './static',
 			},
-			__key: 'staticImages',
+			__key: 'static',
+		},
+		{
+			resolve: 'gatsby-source-filesystem',
+			options: {
+				name: 'gallery',
+				path: './site/gallery/images',
+			},
+			__key: 'gallery',
 		},
 		{
 			resolve: `gatsby-plugin-alias-imports`,

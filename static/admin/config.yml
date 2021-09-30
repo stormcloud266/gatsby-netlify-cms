@@ -15,24 +15,31 @@ collections:
         fields:
           - { label: 'Phone', name: 'phone', widget: 'string' }
           - { label: 'Email', name: 'email', widget: 'string' }
+          - { label: 'Street', name: 'street', widget: 'string' }
+          - {
+              label: 'City State Zip',
+              name: 'city_state_zip',
+              widget: 'string',
+              hint: 'example: Cody, WY 82414',
+            }
       - label: 'Hours'
         name: 'hours'
         file: site/hours/index.json
         fields:
-          - {
-              label: 'Mon',
-              name: 'mon',
-              widget: 'string',
-              hint: 'example: 8am-11pm',
-            }
-          - { label: 'Tues', name: 'tues', widget: 'string' }
+          - { label: 'Monday', name: 'monday', widget: 'string' }
+          - { label: 'Tuesday', name: 'tuesday', widget: 'string' }
+          - { label: 'Wednesday', name: 'wednesday', widget: 'string' }
+          - { label: 'Thursday', name: 'thursday', widget: 'string' }
+          - { label: 'Friday', name: 'friday', widget: 'string' }
+          - { label: 'Saturday', name: 'saturday', widget: 'string' }
+          - { label: 'Sunday', name: 'sunday', widget: 'string' }
       - label: 'Gallery'
         name: 'gallery'
         file: site/gallery/index.json
         media_folder: 'images/'
         fields:
-          - label: 'GalleryImage'
-            name: 'gallery_image'
+          - label: 'Gallery Images'
+            name: 'gallery_images'
             widget: 'list'
             fields:
               - { label: Image, name: image, widget: image }

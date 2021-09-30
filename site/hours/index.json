@@ -1,11 +1,9 @@
 {
-  "mon": "8am - 8pm",
-  "tuesday": "8am - 4pm",
-  "tues": "8am - 8pm",
-  "monday": "8am - 4pm",
-  "sunday": "Closed",
-  "wednesday": "8am - 4pm",
-  "saturday": "Closed",
-  "thursday": "8am - 4pm",
-  "friday": "10am - 2pm"
+	"tuesday": "8am - 4pm",
+	"monday": "8am - 4pm",
+	"sunday": "Closed",
+	"wednesday": "8am - 4pm",
+	"saturday": "Closed",
+	"thursday": "8am - 4pm",
+	"friday": "10am - 2pm"
 }
