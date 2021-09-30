@@ -22,6 +22,10 @@ collections:
               widget: 'string',
               hint: 'example: Cody, WY 82414',
             }
+          - { label: 'Twitter', name: 'twitter', widget: 'string' }
+          - { label: 'Instagram', name: 'instagram', widget: 'string' }
+          - { label: 'Facebook', name: 'facebook', widget: 'string' }
+          - { label: 'LinkedIn', name: 'linkedin', widget: 'string' }
       - label: 'Hours'
         name: 'hours'
         file: site/hours/index.json
