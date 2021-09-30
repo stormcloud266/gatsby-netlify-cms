@@ -1,0 +1,15 @@
+{
+  "imgSrc": "/img/screen-shot-2021-09-30-at-9.24.07-am.png",
+  "imgTitle": "mountains",
+  "imgDesc": "buncha mountains",
+  "galleryImages": [
+    {
+      "image": "/img/screen-shot-2021-09-30-at-9.24.07-am.png",
+      "description": "this is a mountain"
+    },
+    {
+      "image": "/img/screen-shot-2021-09-30-at-9.32.03-am.png",
+      "description": "these are some trees"
+    }
+  ]
+}
