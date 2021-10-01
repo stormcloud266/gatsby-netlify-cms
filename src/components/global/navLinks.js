@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { Button } from '@UI'
 
 const NavLinks = () => {
 	const links = [
@@ -18,15 +19,22 @@ const NavLinks = () => {
 		{
 			title: 'Contact',
 			to: '/contact',
+			cta: true,
 		},
 	]
 	return (
 		<>
-			{links.map(({ title, to }) => (
-				<Link to={to} key={to}>
-					{title}
-				</Link>
-			))}
+			{links.map(({ title, to, cta }) =>
+				cta ? (
+					<Button to={to} key={to} cta nav>
+						{title}
+					</Button>
+				) : (
+					<Link to={to} key={to}>
+						{title}
+					</Link>
+				)
+			)}
 		</>
 	)
 }

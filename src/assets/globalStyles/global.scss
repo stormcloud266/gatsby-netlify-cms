@@ -14,13 +14,13 @@ html {
 }
 
 body {
-	color: $color-text-dark;
+	color: $color-text;
 	background-color: $color-background;
 	box-sizing: border-box;
 	position: relative;
 	font-size: $font-size-1;
 	font-family: $font-family;
-	line-height: 1.6;
+	line-height: 1.8;
 }
 
 main:focus {
@@ -51,6 +51,8 @@ a {
 	text-decoration: none;
 	color: $color-link;
 	transition: color 0.2s;
+	line-height: 1.5;
+
 	&:hover,
 	&:focus {
 		color: lighten($color-link, 10%);

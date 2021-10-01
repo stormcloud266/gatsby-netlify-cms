@@ -1,0 +1,17 @@
+@import '@globalStyles/variables';
+@import '@globalStyles/mixins';
+
+.container {
+	padding-top: 6rem;
+	padding-bottom: 6rem;
+}
+
+.title {
+	font-size: $font-size-5;
+}
+
+@include whenSmall {
+	.title {
+		font-size: $font-size-4;
+	}
+}

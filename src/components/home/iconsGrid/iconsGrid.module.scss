@@ -1,0 +1,46 @@
+@import '@globalStyles/variables';
+@import '@globalStyles/mixins';
+
+.cardContainer {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 2.4rem;
+	row-gap: 6.4rem;
+	margin-top: 9rem;
+}
+
+.card {
+	display: flex;
+	align-items: flex-start;
+}
+
+.iconContainer {
+	background-color: hsl(180, 16%, 85%);
+	color: darkslategray;
+	min-height: 48px;
+	min-width: 48px;
+	max-height: 48px;
+	max-width: 48px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 3px;
+	margin-right: 2rem;
+
+	svg {
+		display: block;
+		width: 2.8rem;
+	}
+}
+
+.cardTitle {
+	font-size: $font-size-2;
+	margin-bottom: 0.6rem;
+}
+
+@include whenMedium {
+	.cardContainer {
+		grid-template-columns: 1fr;
+		margin-top: 6rem;
+	}
+}

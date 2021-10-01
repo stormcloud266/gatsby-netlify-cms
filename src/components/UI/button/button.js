@@ -4,9 +4,20 @@ import PropTypes from 'prop-types'
 import classnames from 'classnames'
 import * as styles from './button.module.scss'
 
-const Button = ({ href, to, cta, children, className, ...rest }) => {
+const Button = ({
+	href,
+	to,
+	cta,
+	white,
+	nav,
+	children,
+	className,
+	...rest
+}) => {
 	const classes = classnames(
 		cta && styles.cta,
+		white && styles.white,
+		nav && styles.nav,
 		styles.button,
 		className && className
 	)
@@ -44,6 +55,8 @@ Button.propTypes = {
 	href: PropTypes.string,
 	to: PropTypes.string,
 	cta: PropTypes.bool,
+	nav: PropTypes.bool,
+	white: PropTypes.bool,
 	children: PropTypes.node.isRequired,
 	rest: PropTypes.object,
 	className: PropTypes.string,

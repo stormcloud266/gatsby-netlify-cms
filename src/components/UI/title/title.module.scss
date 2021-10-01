@@ -1,11 +1,24 @@
 @import '@globalStyles/variables';
+@import '@globalStyles/mixins';
 
 .title {
+	color: $color-text-primary;
 	font-size: $font-size-6;
-	text-shadow: 1px 1px $color-primary;
 	margin-bottom: 2.4rem;
 }
 
 .center {
 	text-align: center;
+}
+
+@include whenMedium {
+	.title {
+		font-size: $font-size-5;
+	}
+}
+
+@include whenSmall {
+	.title {
+		font-size: $font-size-4;
+	}
 }

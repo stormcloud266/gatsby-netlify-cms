@@ -3,6 +3,8 @@
 ### Static Query
 
 ```js
+import { graphql, useStaticQuery } from 'gatsby'
+
 const data = useStaticQuery(graphql`
 	query HeaderQuery {
 		site {
