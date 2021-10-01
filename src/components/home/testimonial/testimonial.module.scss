@@ -1,0 +1,126 @@
+@import '@globalStyles/variables';
+@import '@globalStyles/mixins';
+
+.container {
+	display: flex;
+}
+
+.title {
+	margin-bottom: 0;
+	font-size: $font-size-5;
+}
+
+.imageContainer,
+.textContainer {
+	flex: 1;
+}
+
+.imageContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 40rem;
+}
+
+.iconContainer {
+	min-height: 8rem;
+	min-width: 8rem;
+	max-width: 8rem;
+	max-height: 8rem;
+	background-color: white;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	svg {
+		color: darkslateblue;
+	}
+}
+
+.textContainer {
+	background-color: darkslategray;
+	display: flex;
+	justify-content: center;
+}
+
+.textInner {
+	flex: 1;
+	height: 100%;
+	padding: 4rem;
+	color: white;
+	max-width: 60rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.testimonial {
+	display: none;
+	flex-direction: column;
+}
+
+.visible {
+	display: block;
+	animation: fadeIn 0.8s forwards;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.author {
+	color: $color-text-accent;
+	font-size: $font-size-0;
+	margin-top: 1rem;
+	font-style: italic;
+}
+
+.button {
+	background-color: transparent;
+	color: white;
+	transition: color 0.3s;
+
+	&:first-of-type {
+		margin-right: 2rem;
+	}
+
+	&:hover,
+	&:focus {
+		color: $color-cta;
+	}
+
+	&:disabled {
+		opacity: 0.5;
+		&:hover {
+			color: white;
+			cursor: unset;
+		}
+	}
+
+	svg {
+		display: block;
+		width: 3rem;
+	}
+}
+
+@include whenMedium {
+	.container {
+		flex-direction: column;
+	}
+
+	.imageContainer {
+		min-height: 30rem;
+	}
+
+	.textContainer {
+		min-height: 32rem;
+		width: 100%;
+		text-align: center;
+	}
+}

@@ -1,6 +1,15 @@
 import React from 'react'
 import { Layout, Seo } from '@global'
-import { Hero, Intro, Cta, IconsGrid, Gallery } from '@components/home'
+import {
+	Hero,
+	Intro,
+	Cta,
+	IconsGrid,
+	Gallery,
+	Testimonial,
+	Contact,
+} from '@components/home'
+
 // import hours from '../../site/hours'
 // import contact from '../../site/contact_info'
 
@@ -13,6 +22,8 @@ const IndexPage = ({ data }) => {
 			<IconsGrid />
 			<Cta />
 			<Gallery />
+			<Testimonial />
+			<Contact />
 
 			{/* 
 			<p>Monday: {hours.monday}</p>

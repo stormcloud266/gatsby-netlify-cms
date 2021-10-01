@@ -1,0 +1,71 @@
+@import '@globalStyles/variables';
+@import '@globalStyles/mixins';
+
+.formContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.form {
+	width: 100%;
+	max-width: 48rem;
+}
+
+.inputContainer {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2.4rem;
+
+	label {
+		color: $color-text-tertiary;
+	}
+
+	input,
+	textarea {
+		padding: 0.6rem 1rem;
+		border: 1px solid #cdd0df;
+		border-radius: 3px;
+	}
+	textarea {
+		resize: none;
+	}
+}
+
+.button {
+	width: 100%;
+}
+
+.listItem {
+	display: flex;
+	align-items: center;
+	margin-top: 2.4rem;
+}
+
+.iconContainer {
+	min-width: 4.2rem;
+	min-height: 4.2rem;
+	max-height: 4.2rem;
+	max-width: 4.2rem;
+
+	color: $color-cta;
+	background-color: rgba($color-cta, 0.2);
+	border: 1px solid $color-cta;
+	border-radius: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 1.4rem;
+
+	svg {
+		width: 2rem;
+	}
+}
+
+@include whenMedium {
+	.formContainer {
+		align-items: center;
+		margin-top: 3.6rem;
+	}
+}

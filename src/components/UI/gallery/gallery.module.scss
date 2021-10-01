@@ -45,7 +45,10 @@
 
 .closeButton {
 	margin: 2rem auto 0;
-	background-color: $color-link;
+	background-color: $color-cta;
+	font-family: $font-family-title;
+	color: $color-text-accent-primary;
+	text-shadow: 1px 1px rgba($color-text, 0.7);
 	border-radius: 3px;
 	padding: 0.8rem 2rem;
 	text-transform: uppercase;
@@ -55,7 +58,8 @@
 
 	&:hover,
 	&:focus {
-		background-color: $color-cta;
+		background-color: darken($color-cta, 10%);
+		border-color: darken($color-cta, 10%);
 	}
 }
 

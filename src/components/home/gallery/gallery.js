@@ -5,7 +5,7 @@ import * as styles from './gallery.module.scss'
 
 const GallerySection = () => {
 	return (
-		<Container section wrapper>
+		<Container section wrapper className={styles.container}>
 			<Fade triggerOnce>
 				<Title center className={styles.title}>
 					View Our Recent Work
