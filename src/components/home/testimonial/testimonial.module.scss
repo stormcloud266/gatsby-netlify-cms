@@ -23,10 +23,8 @@
 }
 
 .iconContainer {
-	min-height: 8rem;
-	min-width: 8rem;
-	max-width: 8rem;
-	max-height: 8rem;
+	@include iconSize(8rem);
+
 	background-color: white;
 	border-radius: 100%;
 	display: flex;
@@ -41,14 +39,12 @@
 .textContainer {
 	background-color: darkslategray;
 	display: flex;
-	justify-content: center;
 }
 
 .textInner {
 	flex: 1;
 	height: 100%;
 	padding: 4rem;
-	color: white;
 	max-width: 60rem;
 	display: flex;
 	flex-direction: column;
@@ -122,5 +118,6 @@
 		min-height: 32rem;
 		width: 100%;
 		text-align: center;
+		justify-content: center;
 	}
 }

@@ -7,22 +7,22 @@ import * as styles from './iconsGrid.module.scss'
 const IconsGrid = () => {
 	const data = [
 		{
-			title: 'Advanced Lawn Care',
+			title: 'Pruning and Hedging',
 			body: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente molestias dolor reprehenderit corrupti quos?',
 			icon: <Leaf />,
 		},
 		{
-			title: 'Advanced Lawn Care',
+			title: 'Tree Trimming',
 			body: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente molestias dolor reprehenderit corrupti quos?',
 			icon: <Tree />,
 		},
 		{
-			title: 'Advanced Lawn Care',
+			title: 'Landscaping',
 			body: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente molestias dolor reprehenderit corrupti quos?',
 			icon: <Compass />,
 		},
 		{
-			title: 'Advanced Lawn Care',
+			title: 'Irrigation Installation',
 			body: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente molestias dolor reprehenderit corrupti quos?',
 			icon: <Wrench />,
 		},
@@ -33,7 +33,7 @@ const IconsGrid = () => {
 			<Container wrapperSmOnMd>
 				<Container wrapperSm noPadding>
 					<Fade triggerOnce>
-						<Title center>Checkout All These Things We Can Do</Title>
+						<Title center>We Provide Top-Rated Services</Title>
 					</Fade>
 				</Container>
 

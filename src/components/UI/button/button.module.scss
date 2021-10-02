@@ -1,22 +1,15 @@
 @import '@globalStyles/variables';
+@import '@globalStyles/mixins';
 
 .button {
-	padding: 0.8rem 3rem;
-	cursor: pointer;
+	@include buttonStyles;
+
 	color: $color-text-accent-primary;
-	font-size: $font-size-1;
-	font-weight: bold;
-	outline: none;
-	display: inline-block;
-	transition: all 0.2s;
 	box-shadow: 0px 0px hsl(0, 0%, 20%);
-	border: 2px solid white;
 
 	&:hover,
 	&:focus {
-		background-color: darken($color-cta, 10%);
-		border-color: darken($color-cta, 10%);
-		color: white;
+		color: $color-text-accent-primary;
 		box-shadow: 2px 2px $color-text-accent-tertiary;
 	}
 }
@@ -25,36 +18,19 @@
 	background-color: $color-cta;
 	border-color: $color-cta;
 	color: $color-text-accent-primary;
-	text-shadow: 1px 1px rgba($color-text, 0.7);
 
-	&:hover,
-	&:focus {
-		background-color: darken($color-cta, 10%);
-		border-color: darken($color-cta, 10%);
-	}
+	@include buttonAnimation;
 }
 
 .white {
-	background-color: white;
 	color: $color-cta;
+	text-shadow: none;
+
+	@include buttonAnimation(white, $color-cta-hover);
 
 	&:hover,
 	&:focus {
-		background-color: white;
-		border-color: $color-cta;
-		color: $color-cta;
-		box-shadow: none;
-	}
-}
-
-.nav {
-	font-size: $font-size-1;
-	color: white !important;
-	border-bottom: 2px solid $color-cta !important;
-
-	&:hover,
-	&:focus {
-		box-shadow: none;
-		border-color: darken($color-cta, 10%) !important;
+		color: white;
+		text-shadow: 1px 1px rgba($color-text, 0.7);
 	}
 }

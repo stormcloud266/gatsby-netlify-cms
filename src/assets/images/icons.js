@@ -2,25 +2,37 @@ import React from 'react'
 
 export const Hamburger = () => (
 	<svg
-		viewBox='0 0 15 15'
-		fill='none'
 		xmlns='http://www.w3.org/2000/svg'
-		width='15'
-		height='15'
+		className='prefix__icon prefix__icon-tabler prefix__icon-tabler-menu'
+		width={24}
+		height={24}
+		viewBox='0 0 24 24'
+		strokeWidth={1.5}
+		stroke='currentColor'
+		fill='none'
+		strokeLinecap='round'
+		strokeLinejoin='round'
 	>
-		<path d='M0 3.5h15m-15 8h15m-15-4h15' stroke='currentColor'></path>
+		<path d='M0 0h24v24H0z' stroke='none' />
+		<path d='M4 8h16M4 16h16' />
 	</svg>
 )
 
 export const Times = () => (
 	<svg
-		viewBox='0 0 15 15'
-		fill='none'
 		xmlns='http://www.w3.org/2000/svg'
-		width='15'
-		height='15'
+		className='prefix__icon prefix__icon-tabler prefix__icon-tabler-x'
+		width={24}
+		height={24}
+		viewBox='0 0 24 24'
+		strokeWidth={1.5}
+		stroke='currentColor'
+		fill='none'
+		strokeLinecap='round'
+		strokeLinejoin='round'
 	>
-		<path d='M1.5 1.5l12 12m-12 0l12-12' stroke='currentColor'></path>
+		<path d='M0 0h24v24H0z' stroke='none' />
+		<path d='M18 6L6 18M6 6l12 12' />
 	</svg>
 )
 
@@ -218,5 +230,77 @@ export const Quote = () => (
 			d='M2.5 1A1.5 1.5 0 001 2.5V10a4 4 0 004 4v-1a3 3 0 01-3-3V7h3.5A1.5 1.5 0 007 5.5v-3A1.5 1.5 0 005.5 1h-3zm7 0A1.5 1.5 0 008 2.5V10a4 4 0 004 4v-1a3 3 0 01-3-3V7h3.5A1.5 1.5 0 0014 5.5v-3A1.5 1.5 0 0012.5 1h-3z'
 			fill='currentColor'
 		/>
+	</svg>
+)
+
+export const Facebook = () => (
+	<svg
+		xmlns='http://www.w3.org/2000/svg'
+		className='prefix__icon prefix__icon-tabler prefix__icon-tabler-brand-facebook'
+		width={28}
+		height={28}
+		viewBox='0 0 24 24'
+		strokeWidth={1.5}
+		stroke='currentColor'
+		fill='none'
+		strokeLinecap='round'
+		strokeLinejoin='round'
+	>
+		<path d='M0 0h24v24H0z' stroke='none' />
+		<path d='M7 10v4h3v7h4v-7h3l1-4h-4V8a1 1 0 011-1h3V3h-3a5 5 0 00-5 5v2H7' />
+	</svg>
+)
+export const Twitter = () => (
+	<svg
+		xmlns='http://www.w3.org/2000/svg'
+		className='prefix__icon prefix__icon-tabler prefix__icon-tabler-brand-twitter'
+		width={28}
+		height={28}
+		viewBox='0 0 24 24'
+		strokeWidth={1.5}
+		stroke='currentColor'
+		fill='none'
+		strokeLinecap='round'
+		strokeLinejoin='round'
+	>
+		<path d='M0 0h24v24H0z' stroke='none' />
+		<path d='M22 4.01c-1 .49-1.98.689-3 .99-1.121-1.265-2.783-1.335-4.38-.737S11.977 6.323 12 8v1c-3.245.083-6.135-1.395-8-4 0 0-4.182 7.433 4 11-1.872 1.247-3.739 2.088-6 2 3.308 1.803 6.913 2.423 10.034 1.517 3.58-1.04 6.522-3.723 7.651-7.742a13.84 13.84 0 00.497-3.753C20.18 7.773 21.692 5.25 22 4.009z' />
+	</svg>
+)
+export const Linkedin = () => (
+	<svg
+		xmlns='http://www.w3.org/2000/svg'
+		className='prefix__icon prefix__icon-tabler prefix__icon-tabler-brand-linkedin'
+		width={28}
+		height={28}
+		viewBox='0 0 24 24'
+		strokeWidth={1.5}
+		stroke='currentColor'
+		fill='none'
+		strokeLinecap='round'
+		strokeLinejoin='round'
+	>
+		<path d='M0 0h24v24H0z' stroke='none' />
+		<rect x={4} y={4} width={16} height={16} rx={2} />
+		<path d='M8 11v5M8 8v.01M12 16v-5M16 16v-3a2 2 0 00-4 0' />
+	</svg>
+)
+export const Instagram = () => (
+	<svg
+		xmlns='http://www.w3.org/2000/svg'
+		className='prefix__icon prefix__icon-tabler prefix__icon-tabler-brand-instagram'
+		width={28}
+		height={28}
+		viewBox='0 0 24 24'
+		strokeWidth={1.5}
+		stroke='currentColor'
+		fill='none'
+		strokeLinecap='round'
+		strokeLinejoin='round'
+	>
+		<path d='M0 0h24v24H0z' stroke='none' />
+		<rect x={4} y={4} width={16} height={16} rx={4} />
+		<circle cx={12} cy={12} r={3} />
+		<path d='M16.5 7.5v.001' />
 	</svg>
 )

@@ -15,12 +15,10 @@
 }
 
 .iconContainer {
+	@include iconSize(4.8rem);
+
 	background-color: hsl(180, 16%, 85%);
 	color: darkslategray;
-	min-height: 48px;
-	min-width: 48px;
-	max-height: 48px;
-	max-width: 48px;
 	display: flex;
 	justify-content: center;
 	align-items: center;

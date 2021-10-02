@@ -1,8 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Button } from '@UI'
 
-const NavLinks = () => {
+const NavLinks = ({ ctaClass }) => {
 	const links = [
 		{
 			title: 'Home',
@@ -24,17 +23,11 @@ const NavLinks = () => {
 	]
 	return (
 		<>
-			{links.map(({ title, to, cta }) =>
-				cta ? (
-					<Button to={to} key={to} cta nav>
-						{title}
-					</Button>
-				) : (
-					<Link to={to} key={to}>
-						{title}
-					</Link>
-				)
-			)}
+			{links.map(({ title, to, cta }) => (
+				<Link to={to} key={to} className={cta && ctaClass}>
+					{title}
+				</Link>
+			))}
 		</>
 	)
 }

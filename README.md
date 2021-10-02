@@ -17,13 +17,6 @@
 
 ## todo
 
-footer
-nav links/button
-mobile nav transition all
-replace headers text
-clean up testimonials code
-
 **data**
 testimonials list
 add gallery images
-logo

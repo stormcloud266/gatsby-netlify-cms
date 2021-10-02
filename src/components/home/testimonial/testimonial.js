@@ -52,7 +52,7 @@ const Testimonial = () => {
 						<Title className={styles.title}>
 							See what our clients are saying
 						</Title>
-						<div className={styles.testimonialsContainer}>
+						<div>
 							{testimonials.map(({ name, text }, i) => (
 								<div
 									key={i}

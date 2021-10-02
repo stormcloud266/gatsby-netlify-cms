@@ -1,15 +1,65 @@
 @import '@globalStyles/variables';
+@import '@globalStyles/mixins';
 
 .footer {
 	padding: 3.2rem 0;
-	font-size: $font-size-0;
 	background-color: $color-footer-background;
-	text-align: center;
+	color: hsl(0, 0%, 100%);
+}
+
+.textContainer {
+	max-width: 40rem;
+	font-size: $font-size-0;
+}
+
+.logo {
+	color: $color-cta;
+	font-family: $font-family-title;
+	font-size: $font-size-3;
+	display: inline-block;
+	margin-bottom: 1rem;
+
+	&:hover {
+		color: white;
+	}
+}
+
+.social {
+	a {
+		margin-right: 1.4rem;
+	}
+	svg {
+		width: 24px;
+	}
 }
 
 .nav {
+	text-align: right;
 	a {
+		margin-left: 4rem;
 		color: hsl(0, 0%, 100%);
-		margin: 0 2rem;
+	}
+}
+
+.social a,
+.nav a {
+	color: $color-text-accent-tertiary;
+	&:hover {
+		color: $color-cta;
+	}
+}
+
+@include whenMedium {
+	.nav {
+		text-align: center;
+	}
+
+	.textContainer {
+		text-align: center;
+	}
+
+	.social a,
+	.nav a {
+		margin: 0 1.4rem;
 	}
 }

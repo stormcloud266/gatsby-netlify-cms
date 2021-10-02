@@ -31,7 +31,7 @@ const Hero = () => {
 							Get the Perfect Yard without Breaking a Sweat
 						</Title>
 					</Fade>
-					<Fade triggerOnce delay={500}>
+					<Fade triggerOnce delay={300}>
 						<div className={styles.buttonContainer}>
 							<Button to='/#contact' cta>
 								Get Your Free Quote

@@ -21,9 +21,9 @@ const Contact = () => {
 							esse corporis voluptatibus nesciunt nihil odit expedita aliquam
 							minus vitae obcaecati iure laborum labore repudiandae provident.
 						</p>
-						<div className={styles.list}>
-							{data.map(({ icon, text }) => (
-								<div className={styles.listItem}>
+						<div>
+							{data.map(({ icon, text }, i) => (
+								<div className={styles.listItem} key={i}>
 									<div className={styles.iconContainer}>{icon}</div>
 									<p>{text}</p>
 								</div>

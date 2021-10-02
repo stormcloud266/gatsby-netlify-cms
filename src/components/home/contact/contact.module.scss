@@ -43,10 +43,7 @@
 }
 
 .iconContainer {
-	min-width: 4.2rem;
-	min-height: 4.2rem;
-	max-height: 4.2rem;
-	max-width: 4.2rem;
+	@include iconSize(4.2rem);
 
 	color: $color-cta;
 	background-color: rgba($color-cta, 0.2);

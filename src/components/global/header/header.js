@@ -25,7 +25,7 @@ const Header = () => {
 				</button>
 
 				<nav className={classnames(styles.nav, isOpen && styles.open)}>
-					<NavLinks />
+					<NavLinks ctaClass={styles.ctaLink} />
 				</nav>
 			</Container>
 		</header>
