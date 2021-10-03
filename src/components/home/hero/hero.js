@@ -5,23 +5,25 @@ import { BackgroundImage, Button, Container, Title } from '@UI'
 import * as styles from './hero.module.scss'
 
 const Hero = () => {
-	const data = useStaticQuery(graphql`
-		query HeaderQuery {
-			file(name: { eq: "hero" }) {
-				childImageSharp {
-					gatsbyImageData(
-						layout: FULL_WIDTH
-						quality: 100
-						placeholder: BLURRED
-					)
+	const { image } = useStaticQuery(
+		graphql`
+			query {
+				image: file(relativePath: { eq: "hero.jpeg" }) {
+					childImageSharp {
+						gatsbyImageData(
+							layout: FULL_WIDTH
+							quality: 100
+							placeholder: BLURRED
+						)
+					}
 				}
 			}
-		}
-	`)
+		`
+	)
 
 	return (
 		<BackgroundImage
-			image={data.file}
+			image={image}
 			overlayColor='linear-gradient(to top left, hsla(248, 39%, 39%, .8), hsla(180, 25%, 25%, .8))'
 		>
 			<Container className={styles.hero} wrapper textCenter>

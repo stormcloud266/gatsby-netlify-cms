@@ -12,7 +12,6 @@ const BackgroundImage = ({
 	fixed,
 	className,
 	innerClassName,
-	...rest
 }) => {
 	const pluginImage = getImage(image)
 

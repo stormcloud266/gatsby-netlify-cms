@@ -2,9 +2,9 @@ const path = require('path')
 
 module.exports = {
 	siteMetadata: {
-		title: 'Gatsby Starter Stormcloud',
-		siteUrl: `https://www.gatsbyjs.com`,
-		description: `Gatsby v3 starter for getting website projects up and running fast.`,
+		title: 'Lawn Care Mock',
+		siteUrl: `https://lawn-care-mock.netlify.app/`,
+		description: `Gatsby v3 website with Netlify CMS.`,
 	},
 	plugins: [
 		'gatsby-plugin-sass',

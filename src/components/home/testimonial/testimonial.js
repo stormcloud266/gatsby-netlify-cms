@@ -8,15 +8,21 @@ import testimonials from '@site/testimonials'
 import * as styles from './testimonial.module.scss'
 
 const Testimonial = () => {
-	const data = useStaticQuery(graphql`
-		query TestimonialQuery {
-			image: file(relativePath: { eq: "testimonials.jpeg" }) {
-				childImageSharp {
-					gatsbyImageData(layout: CONSTRAINED, width: 350, placeholder: BLURRED)
+	const { image } = useStaticQuery(
+		graphql`
+			query {
+				image: file(relativePath: { eq: "testimonials.jpeg" }) {
+					childImageSharp {
+						gatsbyImageData(
+							layout: FULL_WIDTH
+							quality: 100
+							placeholder: BLURRED
+						)
+					}
 				}
 			}
-		}
-	`)
+		`
+	)
 
 	const [visibleIndex, setVisibleIndex] = useState(0)
 
@@ -24,7 +30,7 @@ const Testimonial = () => {
 		<Container className={styles.container} bgDark>
 			<BackgroundImage
 				className={styles.imageContainer}
-				image={data.image}
+				image={image}
 				overlayColor='linear-gradient(to top left, hsla(248, 39%, 39%, .8), hsla(180, 25%, 25%, .8))'
 			>
 				<div className={styles.iconContainer}>
