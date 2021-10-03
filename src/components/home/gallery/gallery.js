@@ -5,7 +5,13 @@ import * as styles from './gallery.module.scss'
 
 const GallerySection = () => {
 	return (
-		<Container section wrapper className={styles.container} id='gallery'>
+		<Container
+			section
+			wrapper
+			noPadding
+			className={styles.container}
+			id='gallery'
+		>
 			<Fade triggerOnce>
 				<Title center className={styles.title}>
 					View Our Recent Work

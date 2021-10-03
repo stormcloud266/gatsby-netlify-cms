@@ -4,9 +4,10 @@
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 0.8rem;
+	padding: 0 0.8rem;
 
 	:global(.gatsby-image-wrapper) {
-		height: 20rem;
+		height: 24rem;
 	}
 }
 
@@ -25,7 +26,7 @@
 	&:focus {
 		:global(.gatsby-image-wrapper) {
 			transform: scale(1.03);
-			opacity: 0.5;
+			opacity: 0.65;
 		}
 	}
 }
