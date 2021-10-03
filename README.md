@@ -17,6 +17,8 @@
 
 ## todo
 
+add hours to footer
+
 **data**
 testimonials list
 add gallery images

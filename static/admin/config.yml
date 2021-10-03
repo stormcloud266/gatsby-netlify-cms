@@ -46,5 +46,15 @@ collections:
             name: 'gallery_images'
             widget: 'list'
             fields:
-              - { label: Image, name: image, widget: image }
-              - { label: Description, name: description, widget: string }
+              - { label: 'Image', name: 'image', widget: image }
+              - { label: 'Description', name: 'description', widget: string }
+      - label: 'Testimonials'
+        name: 'testimonials'
+        file: site/testimonials/index.json
+        fields:
+          - label: 'Testimonial'
+            name: 'Testimonial'
+            widget: 'list'
+            fields:
+              - { label: 'Name', name: 'name', widget: string }
+              - { label: 'Text', name: text, widget: text }
