@@ -29,7 +29,7 @@ const IconsGrid = () => {
 	]
 
 	return (
-		<Container bgAccent section>
+		<Container bgAccent section id='services'>
 			<Container wrapperSmOnMd>
 				<Container wrapperSm noPadding>
 					<Fade triggerOnce>

@@ -9,15 +9,19 @@ const NavLinks = ({ ctaClass }) => {
 		},
 		{
 			title: 'About',
-			to: '/about',
+			to: '/#about',
 		},
 		{
-			title: 'Blog',
-			to: '/blog',
+			title: 'Services',
+			to: '/#services',
+		},
+		{
+			title: 'Gallery',
+			to: '/#gallery',
 		},
 		{
 			title: 'Contact',
-			to: '/contact',
+			to: '/#contact',
 			cta: true,
 		},
 	]

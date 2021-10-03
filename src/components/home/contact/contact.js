@@ -2,16 +2,17 @@ import React from 'react'
 import { Fade } from 'react-awesome-reveal'
 import { Button, Container, Flex, Title } from '@UI'
 import { Map, Phone, Mail } from '@images/icons'
+import contact from '@site/contact_info'
 import * as styles from './contact.module.scss'
 
 const Contact = () => {
 	const data = [
-		{ icon: <Map />, text: 'placeholder text' },
-		{ icon: <Phone />, text: 'placeholder text' },
-		{ icon: <Mail />, text: 'placeholder text' },
+		{ icon: <Map />, text: contact.address },
+		{ icon: <Phone />, text: contact.phone },
+		{ icon: <Mail />, text: contact.email },
 	]
 	return (
-		<Container section wrapperSmOnMd>
+		<Container section wrapperSmOnMd id='contact'>
 			<Fade triggerOnce>
 				<Flex collapseOnMd>
 					<Container>

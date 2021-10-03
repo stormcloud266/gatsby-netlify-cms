@@ -12,7 +12,7 @@ const Intro = () => {
 	]
 
 	return (
-		<Container section wrapperSmOnMd>
+		<Container section wrapperSmOnMd id='about'>
 			<Fade triggerOnce>
 				<Flex collapseOnMd>
 					<Container textBlock>

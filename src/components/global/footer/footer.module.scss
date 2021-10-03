@@ -4,12 +4,16 @@
 .footer {
 	padding: 3.2rem 0;
 	background-color: $color-footer-background;
-	color: hsl(0, 0%, 100%);
+	font-size: $font-size-0;
+}
+
+.flex {
+	justify-content: space-between;
 }
 
 .textContainer {
+	color: $color-text-accent-tertiary;
 	max-width: 40rem;
-	font-size: $font-size-0;
 }
 
 .logo {
@@ -26,7 +30,7 @@
 
 .social {
 	a {
-		margin-right: 1.4rem;
+		margin-right: 2rem;
 	}
 	svg {
 		width: 24px;
@@ -34,10 +38,11 @@
 }
 
 .nav {
-	text-align: right;
+	margin-bottom: 2.4rem;
+
 	a {
-		margin-left: 4rem;
-		color: hsl(0, 0%, 100%);
+		margin-right: 4rem;
+		font-weight: bold;
 	}
 }
 
@@ -47,6 +52,29 @@
 	&:hover {
 		color: $color-cta;
 	}
+}
+
+.hours {
+	display: flex;
+	flex-direction: column;
+	max-width: 30rem;
+}
+
+.hoursList {
+	width: 100%;
+	li {
+		display: flex;
+		justify-content: space-between;
+	}
+	span {
+		font-weight: bold;
+		margin-right: 1rem;
+	}
+}
+
+.title {
+	font-size: $font-size-4;
+	text-align: center;
 }
 
 @include whenMedium {

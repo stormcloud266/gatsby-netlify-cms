@@ -25,7 +25,7 @@ module.exports = {
 			resolve: 'gatsby-plugin-web-font-loader',
 			options: {
 				google: {
-					families: ['Droid Sans', 'Droid Serif'],
+					families: ['Montserrat:400,600', 'Work Sans:700'],
 				},
 			},
 		},
