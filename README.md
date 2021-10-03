@@ -18,6 +18,7 @@
 ## todo
 
 add hours to footer
+set up form for netlify
 
 **data**
 testimonials list

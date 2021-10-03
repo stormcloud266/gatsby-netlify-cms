@@ -4,6 +4,7 @@ import { Fade } from 'react-awesome-reveal'
 import classes from 'classnames'
 import { BackgroundImage, Container, Title } from '@UI'
 import { Quote, Next, Previous } from '@images/icons'
+import testimonials from '../../../../site/testimonials'
 import * as styles from './testimonial.module.scss'
 
 const Testimonial = () => {
@@ -16,21 +17,6 @@ const Testimonial = () => {
 			}
 		}
 	`)
-
-	const testimonials = [
-		{
-			name: 'John Doe',
-			text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quos harum quam quis nisi recusandae nulla dolores. Asperiores, nesciunt esse?',
-		},
-		{
-			name: 'Jane Doe',
-			text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-		},
-		{
-			name: 'Carmen Sandiego',
-			text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-		},
-	]
 
 	const [visibleIndex, setVisibleIndex] = useState(0)
 
@@ -53,7 +39,7 @@ const Testimonial = () => {
 							See what our clients are saying
 						</Title>
 						<div>
-							{testimonials.map(({ name, text }, i) => (
+							{testimonials.testimonial.map(({ name, text }, i) => (
 								<div
 									key={i}
 									className={classes(
@@ -79,7 +65,7 @@ const Testimonial = () => {
 								className={styles.button}
 								onClick={() => setVisibleIndex(visibleIndex + 1)}
 								aria-label='next testimonial'
-								disabled={visibleIndex === testimonials.length - 1}
+								disabled={visibleIndex === testimonials.testimonial.length - 1}
 							>
 								<Next />
 							</button>
