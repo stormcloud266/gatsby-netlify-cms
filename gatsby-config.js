@@ -83,6 +83,7 @@ module.exports = {
 					'@UI': path.resolve(__dirname, 'src/components/UI'),
 					'@images': path.resolve(__dirname, 'src/assets/images'),
 					'@globalStyles': path.resolve(__dirname, 'src/assets/globalStyles'),
+					'@site': path.resolve(__dirname, 'site'),
 				},
 			},
 		},
