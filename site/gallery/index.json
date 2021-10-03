@@ -1,12 +1,36 @@
 {
-	"gallery_images": [
-		{
-			"image": "images/screen-shot-2021-09-30-at-12.55.30-pm.png",
-			"description": "trees."
-		},
-		{
-			"image": "images/screen-shot-2021-09-30-at-9.24.07-am.png",
-			"description": "mtns."
-		}
-	]
+  "gallery_images": [
+    {
+      "image": "images/grid1.jpg",
+      "description": "flowers in garden."
+    },
+    {
+      "image": "images/grid2.jpg",
+      "description": "beautiful landscaping."
+    },
+    {
+      "image": "images/grid3.jpg",
+      "description": "garden next to pool."
+    },
+    {
+      "image": "images/grid4.jpg",
+      "description": "manicured yard and sidewalk."
+    },
+    {
+      "image": "images/grid5.jpg",
+      "description": "mowed lawn in front of white home."
+    },
+    {
+      "image": "images/grid6.jpg",
+      "description": "dog laying on landscaped yard."
+    },
+    {
+      "image": "images/grid7.jpg",
+      "description": "outdoor living space with string lights."
+    },
+    {
+      "image": "images/grid8.jpg",
+      "description": "mowed lawn and trimmed trees."
+    }
+  ]
 }
