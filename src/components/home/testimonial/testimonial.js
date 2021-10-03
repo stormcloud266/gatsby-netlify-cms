@@ -4,7 +4,7 @@ import { Fade } from 'react-awesome-reveal'
 import classes from 'classnames'
 import { BackgroundImage, Container, Title } from '@UI'
 import { Quote, Next, Previous } from '@images/icons'
-import testimonials from '../../../../site/testimonials'
+import testimonials from '@site/testimonials'
 import * as styles from './testimonial.module.scss'
 
 const Testimonial = () => {
